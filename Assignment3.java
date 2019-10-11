@@ -1,3 +1,4 @@
+// Assignment3 solution without the use of Math class
 
 public class Assignment3 {
 
@@ -8,13 +9,14 @@ public class Assignment3 {
 	}
 	
 	public static void printPowersOfN(int base, int maxExponent) {
-		int temp = 1;
+		//Variable used to accumulate the value of the latest power interaction
+		int accumulatedValue = 1;
 
 		System.out.print("1 ");
 		for (int i = 1; i <= maxExponent; i++) {
 			
-			System.out.print(base * temp + " ");
-			temp = base * temp;
+			System.out.print(base * accumulatedValue + " ");
+			accumulatedValue = base * accumulatedValue;
 		}
 		
 		System.out.println();
