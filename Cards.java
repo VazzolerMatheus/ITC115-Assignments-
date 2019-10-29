@@ -4,11 +4,12 @@ public class Cards {
 
 	public static void main(String[] args) {
 		
+		//User input
 		Scanner console = new Scanner(System.in);
 		System.out.print("Enter a card: ");
-	
 		String card = console.nextLine();
 		
+		//Converting user input to CAPS to make sure the program works.
 		card = card.toUpperCase();
 		
 		//Naming the CARD
